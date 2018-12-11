@@ -1,0 +1,13 @@
+def prime (n):
+    if n == 0 or n == 1:
+        return "Zero or One"
+    elif n<0:
+        return "Negative"
+    else:
+        for x in range (2,n+1):
+            if x == n:
+                return "Prime"
+                break
+            elif n%x == 0:
+                return "Composite"
+print(prime(-2))
